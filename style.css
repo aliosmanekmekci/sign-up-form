@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Norse-Bold";
-  src: url("/font/Norse-Bold.otf") format("otf");
+  src: url("./font/Norse-Bold.otf") format("opentype");
 }
 
 /*
@@ -74,4 +74,28 @@ h6 {
 .left {
   background-image: url("./asset/halie-west-25xggax4bSA-unsplash.jpg");
   background-size: cover;
+}
+
+.logo-text {
+  font-family: "Norse-Bold";
+  color: white;
+}
+
+footer {
+  color: white;
+}
+
+footer a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:link {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: gray;
+  text-decoration: underline;
 }
