@@ -23,21 +23,21 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img,
+/* img,
 picture,
 video,
 canvas,
 svg {
   display: block;
   max-width: 100%;
-}
+} */
 
-input,
+/* input,
 button,
 textarea,
 select {
   font: inherit;
-}
+} */
 
 p,
 h1,
@@ -68,34 +68,78 @@ h6 {
 
 .container {
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .left {
-  background-image: url("./asset/halie-west-25xggax4bSA-unsplash.jpg");
-  background-size: cover;
+  background: url(./asset/halie-west-25xggax4bSA-unsplash.jpg) top left/cover no-repeat;
+  min-height: 100vh;
+  flex: 1 1 30vw;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.logo-text {
+.left header {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1.5rem;
+  line-height: min(6vw, 5rem);
+
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 20vh 0;
+}
+
+.left img {
+  height: 1lh;
+  width: auto;
+}
+
+.left h1.logo-text {
   font-family: "Norse-Bold";
   color: white;
+  margin: 0;
+  font-size: 0.8lh;
 }
 
-footer {
+.left a {
   color: white;
 }
 
-footer a:visited {
+.left footer {
+  font-size: 0.6rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.left footer {
+  color: white;
+}
+
+.left footer a:visited {
   color: white;
   text-decoration: none;
 }
 
-footer a:link {
+.left footer a:link {
   color: white;
   text-decoration: none;
 }
 
-footer a:hover {
+.left footer a:hover {
   color: gray;
   text-decoration: underline;
+}
+
+.right {
+  flex: 1 1 70vw;
+}
+
+.right h1 {
+  font-size: 1.5rem;
+  padding: 3rem;
 }
