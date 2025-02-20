@@ -1,6 +1,6 @@
 # Sign-Up Form Project
 
-This is a simple HTML and CSS exercise completed as part of [The Odin Project](https://www.theodinproject.com/) curriculum. The project focuses on creating a static sign-up form using HTML for structure and CSS for styling. JavaScript and responsive design concepts will be covered in future lessons.
+This is a simple HTML and CSS exercise completed as part of [The Odin Project](https://www.theodinproject.com/) curriculum. The project focuses on creating a static sign-up form using HTML for structure and CSS for styling. JavaScript and responsive design concepts will be covered in future assignments.
 
 ## Live Demo
 
