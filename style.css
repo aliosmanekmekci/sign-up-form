@@ -91,7 +91,7 @@ h6 {
   gap: 0.5rem;
   justify-content: center;
   align-items: center;
-  margin: 20vh 0;
+  margin: auto 0;
 }
 
 .left img {
@@ -140,6 +140,67 @@ h6 {
 }
 
 .right h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 3rem;
+  font-family: sans-serif;
 }
+
+/* form {
+  width: 100%;
+} */
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+fieldset > div {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 5rem;
+}
+
+fieldset p {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset > h1 {
+  color: rgb(48, 48, 48);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.right label {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  font-size: 0.6rem;
+  margin-bottom: 0.2rem;
+  color: rgb(48, 48, 48);
+}
+
+.right input {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  line-height: 1.3rem;
+  color: rgb(60, 60, 60);
+  width: 14rem;
+}
+
+.right input:invalid {
+  border-color: rgb(154, 38, 38);
+}
+
+.right input:focus {
+  outline: none;
+
+  /* Box shadows generated on https://www.cssmatic.com/box-shadow */
+  -webkit-box-shadow: 5px 5px 10px -7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 10px -7px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px -7px rgba(0, 0, 0, 0.3);
+}
+
+.right form button {}
