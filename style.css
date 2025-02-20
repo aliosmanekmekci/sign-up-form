@@ -139,7 +139,7 @@ h6 {
   flex: 1 1 70vw;
 }
 
-.right h1 {
+.right > header > h1 {
   font-size: 1.3rem;
   padding: 3rem;
   font-family: sans-serif;
@@ -153,6 +153,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   border: none;
+  box-shadow: 0px 4px 14px -6px rgba(0, 0, 0, 0.5);
 }
 
 fieldset > div {
@@ -170,6 +171,7 @@ fieldset > h1 {
   color: rgb(48, 48, 48);
   font-size: 1.1rem;
   margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .right label {
@@ -181,7 +183,7 @@ fieldset > h1 {
   color: rgb(48, 48, 48);
 }
 
-.right input {
+.right p > input {
   border: 1px solid #e5e7eb;
   border-radius: 0.3rem;
   padding: 0.3rem 0.5rem;
@@ -191,16 +193,27 @@ fieldset > h1 {
 }
 
 .right input:invalid {
-  border-color: rgb(154, 38, 38);
+  background-color: ivory;
+  border: none;
+  outline: 2px solid red;
 }
 
 .right input:focus {
   outline: none;
 
   /* Box shadows generated on https://www.cssmatic.com/box-shadow */
-  -webkit-box-shadow: 5px 5px 10px -7px rgba(0, 0, 0, 0.3);
+  /* -webkit-box-shadow: 5px 5px 10px -7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 5px 5px 10px -7px rgba(0, 0, 0, 0.3);
-  box-shadow: 5px 5px 10px -7px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px -7px rgba(0, 0, 0, 0.3); */
 }
 
-.right form button {}
+.right form button {
+  margin: 2rem 1rem;
+  padding: 0.7rem 2.3rem;
+  border-radius: 0.6rem;
+  border: none;
+  background-color: #596d48;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+}
